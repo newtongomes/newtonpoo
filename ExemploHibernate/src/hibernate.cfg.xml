@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+     <!-- Dialeto do Banco de dados -->
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <!-- Driver do Banco de dados -->
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <!-- Url de conexão do Banco de dados 
+        localhost: indica que´o banco e dados está na própria máquina.
+        5432: porta de acesso ao banco de dados
+        teste: nome do banco/esquema -->
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/exemplo</property>
+    <!-- Usuario do banco de dados-->
+    <property name="hibernate.connection.username">root</property>
+    <!-- senha do banco de dados-->
+    <property name="hibernate.connection.password">root</property>
+    <!-- Mostra a consulta SQL no console -->
+    <property name="show_sql">true</property>
+    <!-- Mostra a consulta formatada -->
+    <property name="format_sql">true</property>
+    
+    <!-- Mapeamento da classe que será persistida pelo hibernate -->
+    <mapping class="br.exemplo.hibernate.entidade.Produto"/>
+  </session-factory>
+</hibernate-configuration>
