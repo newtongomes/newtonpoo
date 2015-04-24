@@ -1,0 +1,62 @@
+-------------------
+POO - 2014.2
+ATIVIDADE PARA AV-2 
+-------------------
+Projeto para Cadastro de Alunos e Turmas
+Nome do Projeto: CadastroAlunosV2
+Pacotes: 
+br.estacio.poo.alunos....
+...main
+...frames
+    FrameLogin.java
+    FramePrincipal.java
+    FrameAlunos.java
+    FrameSobre.java
+    FrameTurmas.java
+    FrameUsuarios.java
+...entidade
+...persistencia
+...dao
+...util
+
+
+Menu Principal:
+
+-Cadastros
+ +- Alunos
+ +- Turmas
+ +- Usuarios
+-Matricula
+ +- Matricula Aluno
+-Consultas
+ +- Alunos
+ +- Turma de Alunos
+-Sistema
+ +- Sobre 
+ +- Sair do Sistema
+
+
+Entidades:
+
+*Usuario:
+ -codigo : int
+ -nome : String
+ -cpf : String
+ -telefone : String
+ -login : String
+ -senha : String
+
+*Aluno
+
+*Turma
+
+
+
+
+
+
+
+
+
+
+
