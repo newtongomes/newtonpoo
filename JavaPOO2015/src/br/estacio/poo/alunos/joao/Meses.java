@@ -1,9 +1,9 @@
-/* Deve-se ler um número inteiro correspondente ao número do mês do ano (1 a 12) em seguida
- * mostrar o nome do mês com a quantidade de dias que o mês tem (28,28,30 ou 21). Perguntar 
- * ao usuário se deseja executar o programa novamente, caso a resposta seja "sim" repetir
- * o programa, caso contrário, finalizar. */
+/* Deve-se ler um nÃºmero inteiro correspondente ao nÃºmero do mÃªs do ano (1 a 12) em seguida
+ * mostrar o nome do mÃªs com a quantidade de dias que o mÃªs tem (28,28,30 ou 21). Perguntar 
+ * ao usuÃ¡rio se deseja executar o programa novamente, caso a resposta seja "sim" repetir
+ * o programa, caso contrÃ¡rio, finalizar. */
 
-package br.estacio.lpr.exercicios.nivel3;
+package br.estacio.poo.alunos.joao;
 
 import java.util.Scanner;
 
@@ -15,7 +15,7 @@ public class Meses {
 		String opcao;
 		
 		do {
-			System.out.printf ("\n\nDigite o número do mês: ");
+			System.out.printf ("\n\nDigite o nÃºmero do mÃªs: ");
 			numeroMes = s.nextInt ();
 			
 			menu (numeroMes);
@@ -27,7 +27,7 @@ public class Meses {
 		System.out.print ("Programa Finalizado!\n");
 		s.close ();
 		
-	} // Fim método main
+	} // Fim mï¿½todo main
 	
 	static void menu (int numeroMes) {
 		int qtdDias = 0;
@@ -43,7 +43,7 @@ public class Meses {
 				qtdDias = 28;
 				break;
 			case 3:
-				nomeMes = "Março";
+				nomeMes = "MarÃ§o";
 				qtdDias = 31;
 				break;
 			case 4:
@@ -83,13 +83,13 @@ public class Meses {
 				qtdDias = 31;
 				break;
 			default:
-				System.out.printf ("Mês inválido.\n");
+				System.out.printf ("MÃªs invÃ¡lido.\n");
 		}
 		if (numeroMes <= 12 && numeroMes >=1) {
-			System.out.printf ("Nome do mês: %s\n", nomeMes);
+			System.out.printf ("Nome do mÃªs: %s\n", nomeMes);
 			System.out.printf ("Quantidade de dias: %d\n", qtdDias);
 		} 
 	
-	} // Fim do método menu
+	} // Fim do mÃ©todo menu
 
 } // Fim da classe Meses

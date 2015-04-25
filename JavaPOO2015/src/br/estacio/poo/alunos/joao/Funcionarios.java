@@ -1,12 +1,12 @@
-/*	Deseja-se calcular o sal·rio lÌquido de um grupo de 10 funcion·rios de uma empresa,
- *	e ainda o total a ser pago a estes funcion·rios. Cada funcion·rio deve entrar com sua
- *	matrÌcula, nome e o sal·rio bruto. O sal·rio lÌquido ser· calculado com um desconto de 6% 
- *	se o sal·rio do funcion·rio for atÈ R$ 1.500,00 e 9,5% para os sal·rios maiores que esse valor.
- *	Ao final mostrar a lista de todos os funcion·rios com seus dados e o sal·rio lÌquido de cada um.
- *	E ainda o total geral a ser pago aos funcion·rios.
+/*	Deseja-se calcular o sal√°rio l√≠quido de um grupo de 10 funcion√°rios de uma empresa,
+ *	e ainda o total a ser pago a estes funcion√°rios. Cada funcion√°rio deve entrar com sua
+ *	matr√≠cula, nome e o sal√°rio bruto. O sal√°rio l√≠quido ser√° calculado com um desconto de 6% 
+ *	se o sal√°rio do funcion√°rio for at√© R$ 1.500,00 e 9,5% para os sal√°rios maiores que esse valor.
+ *	Ao final mostrar a lista de todos os funcion√°rios com seus dados e o sal√°rio l√≠quido de cada um.
+ *	E ainda o total geral a ser pago aos funcion√°rios.
  */
 
-package br.estacio.lpr.exercicios.nivel3;
+package br.estacio.poo.alunos.joao;
 
 import java.util.Scanner;
 
@@ -23,7 +23,7 @@ public class Funcionarios {
 		double[] salariosLiquidos = new double[numeroFuncionarios];
 		
 		for (int i = 0; i < numeroFuncionarios; i++) {
-			System.out.printf("Funcion·rio %d:\n", i + 1);
+			System.out.printf("Funcion√°rio %d:\n", i + 1);
 			
 			System.out.printf ("\tDigite a matricula: ");
 			matriculas[i] = s.nextInt ();
@@ -33,7 +33,7 @@ public class Funcionarios {
 			System.out.printf ("\tDigite o nome: ");
 			nomes[i] = s.nextLine ();
 			
-			System.out.printf("\tDigite o sal·rio bruto: ");
+			System.out.printf("\tDigite o sal√°rio bruto: ");
 			salariosBrutos[i] = s.nextDouble();
 			
 			salariosLiquidos[i] = calculaSalario (salariosBrutos[i]);
@@ -43,17 +43,17 @@ public class Funcionarios {
 		System.out.printf ("\n\n");
 		
 		for (int i = 0; i < numeroFuncionarios; i++) {
-			System.out.printf("\nFuncion·rio %d:\n", i + 1);
+			System.out.printf("\nFuncion√°rio %d:\n", i + 1);
 			
-			System.out.printf ("\tMatrÌcula: %d\n", matriculas[i]);
+			System.out.printf ("\tMatr√≠cula: %d\n", matriculas[i]);
 			System.out.printf ("\tNome: %s\n", nomes[i]);
-			System.out.printf ("\tSal·rio Bruto: %.2f\n", salariosBrutos[i]);
-			System.out.printf ("\tSal·rio LÌquido: %.2f\n", salariosLiquidos[i]);
+			System.out.printf ("\tSal√°rio Bruto: %.2f\n", salariosBrutos[i]);
+			System.out.printf ("\tSal√°rio LÔøΩquido: %.2f\n", salariosLiquidos[i]);
 		}
 		System.out.printf ("\n\nTotal a pagar: %.2f\n", totalPagar);
 		s.close ();
 		
-	} // Fim do mÈtodo main
+	} // Fim do m√©todo main
 	
 	static double calculaSalario (double salario) {
 		double novoSalario = salario;
@@ -64,6 +64,6 @@ public class Funcionarios {
 		
 		return novoSalario;
 	
-	} // Fim do mÈtodo calculaSalario
+	} // Fim do m√©todo calculaSalario
 	
 }

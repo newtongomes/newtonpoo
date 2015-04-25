@@ -1,4 +1,4 @@
-/* Ler o nome e o sobrenome de uma pessoa, em seguida mostrar as formações:
+/* Ler o nome e o sobrenome de uma pessoa, em seguida mostrar as formaÃ§Ãµes:
  *	a) Nome Sobrenome.
  *	b) N.S.
  *	c) Nome, S.
@@ -6,7 +6,7 @@
  *	e) NOME Sobrenome.
  */
 
-package br.estacio.lpr.exercicios.nivel3;
+package br.estacio.poo.alunos.joao;
 
 import java.util.Scanner;
 
@@ -40,5 +40,5 @@ public class Nomes {
 		
 		s.close();
 		
-	} // Fim do método main
+	} // Fim do mÃ©todo main
 } // Fim da classe Nomes

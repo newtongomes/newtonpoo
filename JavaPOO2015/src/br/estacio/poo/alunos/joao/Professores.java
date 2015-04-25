@@ -1,8 +1,8 @@
-/* Deseja-se ler o nome e o tempo de profiss„o de um grupo de 10 professores da faculdade, em seguida deve-se mostrar 
- * o tempo mÈdio de profiss„o dos professores, e o nome do professor mais antigo da faculdade pelo tempo de profiss„o.
+/* Deseja-se ler o nome e o tempo de profiss√£o de um grupo de 10 professores da faculdade, em seguida deve-se mostrar 
+ * o tempo m√©dio de profiss√£o dos professores, e o nome do professor mais antigo da faculdade pelo tempo de profiss√£o.
  */
 
-package br.estacio.lpr.exercicios.nivel3;
+package br.estacio.poo.alunos.joao;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class Professores {
 			System.out.printf ("\nProfessor %d:\n\tDigite o nome do professor: ", i + 1);
 			nomes[i] = s.nextLine ();
 			
-			System.out.printf ("\tDigite o tempo de profiss„o do professor em anos: ");
+			System.out.printf ("\tDigite o tempo de profiss√£o do professor em anos: ");
 			tempo[i] = s.nextDouble ();
 			
 			s.nextLine ();
@@ -28,12 +28,12 @@ public class Professores {
 			tempoMedio += tempo[i]/qtdProfessores;
 		}
 		
-		System.out.printf ("Tempo mÈdio de profiss„o: %.2f\n", tempoMedio);
+		System.out.printf ("Tempo m√©dio de profiss√£o: %.2f\n", tempoMedio);
 		System.out.printf ("Professor mais antigo: %s\n", nomes[maisAntigo (tempo, qtdProfessores)]);
 		
 		s.close ();
 		
-	} // Fim do mÈtodo main
+	} // Fim do mÔøΩtodo main
 	
 	static int maisAntigo (double t[], int qtd) {
 		int maior = 0;
@@ -43,6 +43,6 @@ public class Professores {
 		}
 		return maior;
 	
-	} // Fim do mÈtodo maisAntigo
+	} // Fim do m√©todo maisAntigo
 	
 } // Fim da classe Professores
